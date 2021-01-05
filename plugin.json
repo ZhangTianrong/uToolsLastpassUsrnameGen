@@ -3,6 +3,7 @@
     "pluginName": "Username Generator",
     "description": "使用生成随机用户名",
     "author": "ztr",
+    "home": "https://github.com/ZhangTianrong/uToolsLastpassUsrnameGen/",
     "preload": "preload.js",
     "main": "index.html",
     "logo": "img/logo.png",

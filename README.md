@@ -2,7 +2,7 @@
 
 [Lastpass username generator](https://www.lastpass.com/username-generator) 的本地版，可以生成 `seemingly pronounceable`（“似乎能够读出来的”）的随机用户名。生成手段是通过查询连续可行的三个字母的 continuation，用和 language model 类似的想法通过前面两位的字母生成下一位。
 
-![demo](img/demo.png)
+<img src="img/demo.png" style=" box-shadow: 10px 10px 10px rgba(0,0,0,.5);-moz-box-shadow: 10px 10px 10px rgba(0,0,0,.5);-webkit-box-shadow: 10px 10px 10px rgba(0,0,0,.5);"></img>
 
 ## 功能
 
