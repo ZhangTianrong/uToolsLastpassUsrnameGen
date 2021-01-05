@@ -1,0 +1,25 @@
+{
+    "version": "0.0.1",
+    "pluginName": "Username Generator",
+    "description": "使用生成随机用户名",
+    "author": "ztr",
+    "preload": "preload.js",
+    "main": "index.html",
+    "logo": "img/logo.png",
+    "features": [
+        {
+            "platform": ["darwin", "win32"],
+            "code": "generate_username",
+            "explain": "Lastpass 生成随即用户名",
+            "cmds": [
+                {
+                    "type": "over",
+                    "label": "Username"
+                }
+            ]
+        }
+    ],
+    "pluginSetting": {
+        "height": 135
+    }
+}

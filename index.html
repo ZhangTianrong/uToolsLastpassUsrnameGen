@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel='stylesheet' href='css/ionicons.min.css'>
+  <link rel="stylesheet" href="css/webflow_input.css">
+
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+
+  <script src="js/lastpass_generator.js"></script>
+
+  <script>
+    window.onload = function() {
+      document.getElementById("GENERATED-USERNAME").value = usrname_gen.pronounceablecaps(7);
+    };
+  </script>
+
+  <script>
+    function click2copy() {
+      const copyText = document.getElementById("GENERATED-USERNAME").value;
+      window.utools.copyText(copyText);
+    }
+    function click2refresh() {
+      document.getElementById("GENERATED-USERNAME").value = usrname_gen.pronounceablecaps(8);
+    }
+  </script>
+
+  <script>
+    document.addEventListener('keydown', e => {if (e.keyCode == 13) {
+        click2copy();
+      }
+      else if (e.keyCode == 116) {
+        click2refresh();
+      }
+    });
+  </script>
+</head>
+
+<body translate="no" >
+  <div class="container">
+  <div class="demo-flex-spacer"></div>
+
+  <div class="webflow-style-input">
+    <input class="" id="GENERATED-USERNAME" placeholder="Loading..." disabled></input>
+    <button type="submit" id="click-refresh" onclick="click2refresh()" title="click to refresh"><i class="icon ion-android-refresh"></i></button>
+    <button type="submit" id="click-copy" onclick="click2copy()" title="click to copy"><i class="icon ion-clipboard"></i></button>
+  </div>
+
+  <div class="demo-flex-spacer"></div>
+
+  <div class="demo">Using <a class="demo" href="https://www.lastpass.com/username-generator">Lastpass username generator</a> to generator easy to say random usernames.</div>
+
+</div>
+  
+</body>
+
+</html>
+ 
