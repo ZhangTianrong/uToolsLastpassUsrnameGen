@@ -149,7 +149,6 @@ usrname_gen = {
 						j = 26,
 						k = 26
 					);
-		console.log(leading_chars);
 		for (idx = 3; idx < length; ) {
 			for (sum = 0, i = alphabet.indexOf(leading_chars.charAt(idx - 2)), j = alphabet.indexOf(leading_chars.charAt(idx - 1)), k = 0; k < 26; k++)
 				sum += continuations[i][j][k];
@@ -160,7 +159,6 @@ usrname_gen = {
 					leading_chars += alphabet.charAt(k),
 					k = 26);
 			idx++;
-			console.log(leading_chars);
 		}
 		for (i = 0; i < leading_chars.length; i++) {
 			if (leading_chars[i] === (void 0 !== leading_chars[i + 1] ? leading_chars[i + 1] : "")) {

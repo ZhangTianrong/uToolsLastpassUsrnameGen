@@ -1,5 +1,5 @@
 {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "pluginName": "Username Generator",
     "description": "使用生成随机用户名",
     "author": "ztr",
@@ -21,6 +21,6 @@
         }
     ],
     "pluginSetting": {
-        "height": 135
+        "height": 160
     }
 }

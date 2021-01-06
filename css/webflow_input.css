@@ -114,14 +114,14 @@ body {
   color: #7881A1;
 }
 
-.webflow-style-input button {
+button {
   color: #7881A1;
   font-size: 2.4rem;
   line-height: 2.4rem;
   vertical-align: middle;
   transition: color 0.25s;
 }
-.webflow-style-input button:hover {
+button:hover {
   color: #BFD2FF;
 }
 
@@ -168,4 +168,10 @@ a.demo:after{
 a.demo:hover:after, a.demo:hover:before{
 	width: 45%;
 	transition: width .2s ease;
+}
+
+body, html {
+  background-color: #1d1c25;
+  margin: 0;
+  padding: 0;
 }
